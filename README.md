@@ -146,6 +146,9 @@ experts:
 
 <br><br>
 
+- ### [Jamba-900M-GGUF](https://huggingface.co/Severian/Jamba-900M-GGUF/tree/main)
+> original model from https://huggingface.co/pszemraj/jamba-900M-v0.13-KIx2
+
 ---
 
 ### TensorOpera-Fox-1-chat
