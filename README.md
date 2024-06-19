@@ -97,6 +97,12 @@ https://docs.gptr.dev/docs/gpt-researcher/pip-package
 > EasyGui provides an easy-to-use interface for simple GUI interaction with a user. It does not require the programmer to know anything about tkinter, frames, widgets, callbacks or lambda.<br>
 > EasyGUI runs on Python 2 and 3, and does not have any dependencies.
 
+<br><br><br>
+<img src='https://scontent-mxp2-1.xx.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=gHe9SH5Q39oQ7kNvgF40WF2&_nc_ht=scontent-mxp2-1.xx&oh=00_AYC2pLd7XyxG2PbimvpfsgvSoenwfHnZ0smUp7kV8OLsew&oe=66788A39' width=200>
+- ### [Meta Chameleon](https://github.com/facebookresearch/chameleon/tree/main)
+> Annoucement here https://about.fb.com/news/2024/06/releasing-new-ai-research-models-to-accelerate-innovation-at-scale/ <br>and here https://twitter.com/AIatMeta/status/1803107817345393136 <br>
+> As we shared in our research paper last month, Meta Chameleon is a family of models that can combine text and images as input and output any combination of text and images with a single unified architecture for both encoding and decoding. While most current late-fusion models use diffusion-based learning, Meta Chameleon uses tokenization for text and images. This enables a more unified approach and makes the model easier to design, maintain, and scale. The possibilities are endless—imagine generating creative captions for images or using a mix of text prompts and images to create an entirely new scene.<br.
+> https://ai.meta.com/blog/meta-fair-research-new-releases/
 
 - ### [ParlAI](https://parl.ai/projects/recipes/)
 > https://github.com/facebookresearch/ParlAI<br>
@@ -110,4 +116,80 @@ https://parl.ai/projects/
 https://parl.ai/projects/bb3x/
 
 ```
+
+
+### Mixture of Experts or MoAgents
+Quantized models GGUF [mradermacher/TinyEnsemble-3x1.1B-TinyMoE-GGUF](https://huggingface.co/mradermacher/TinyEnsemble-3x1.1B-TinyMoE-GGUF)
+
+
+Original model [TinyEnsemble-3x1.1B-TinyMoE
+](https://huggingface.co/JoPmt/TinyEnsemble-3x1.1B-TinyMoE)
+> TinyEnsemble-3x1.1B-TinyMoE is a Mixture of Experts (MoE) made with the following models using LazyMergekit:
+```
+cognitivecomputations/TinyDolphin-2.8-1.1b
+78health/TinyLlama_1.1B-function-calling
+DaertML/TinyGauss-1.1B
+```
+Configuration
+```
+base_model: cognitivecomputations/TinyDolphin-2.8-1.1b
+gate_mode: cheap_embed
+dtype: bfloat16
+experts:
+  - source_model: cognitivecomputations/TinyDolphin-2.8-1.1b
+    positive_prompts: ["write", "explain", "summarize", "how", "what", "acting"]
+  - source_model: 78health/TinyLlama_1.1B-function-calling
+    positive_prompts: ["code", "python", "javascript", "programming", "script", "run", "create"]
+  - source_model: DaertML/TinyGauss-1.1B
+    positive_prompts: ["count", "math", "algorithm", "crypto", "logic", "reason"]
+```
+
+<br><br>
+
+---
+
+### TensorOpera-Fox-1-chat
+Chat with web-based Document search and TensorOpera Fox-1 LlamaCPP
+
+<img src='https://blog.tensoropera.ai/content/images/size/w1200/2024/06/fox-logo--1--3.jpg' height=400>
+
+
+#### Description
+project to talk with documents retrieved with websearch and enriched with newspaper3k
+forced to use llama-cpp-python and not llamafile becuase of the embeddings
+
+Using langchain for both llamaCPP LlamaCppEmbeddings and ChatLlamaCpp
+
+
+#### MODEL USED: TensorOpera Fox-1
+https://blog.tensoropera.ai/tensoropera-unveils-fox-foundation-model-a-pioneering-open-source-slm-leading-the-way-against-tech-giants/
+
+We are thrilled to introduce TensorOpera Fox-1, our cutting-edge 1.6B parameter small language model (SLM) designed to advance scalability and ownership in the generative AI landscape. TensorOpera Fox-1 is a top-performing SLM in its class, outperforming SLMs developed by industry giants like Apple, Google, and Alibaba, making it an optimal choice for developers and enterprises looking for scalable and efficient AI deployment.
+
+#### Create Venv
+python311 -m venv venv
+➜ venv\Scripts\activate
+(venv) ➜ llamacpp-agents ⚡                                                                                             3.11.7
+
+##### install dependencies
+```
+pip install --upgrade langchain langchain-community faiss-cpu tiktoken duckduckgo-search llama-cpp-python rich newspaper3k easygui lxml_html_clean streamlit
+```
+
+##### RESOURCES:
+https://python.langchain.com/v0.2/docs/integrations/chat/llamacpp/
+
+https://python.langchain.com/v0.1/docs/integrations/text_embedding/llamacpp/
+
+https://python.langchain.com/v0.2/docs/concepts/#documents
+
+https://python.langchain.com/v0.1/docs/integrations/tools/ddg/
+
+https://stackoverflow.com/questions/77782167/modulenotfounderror-no-module-named-langchain-openai
+
+https://python.langchain.com/v0.2/docs/integrations/chat/openai/
+
+---
+
+<br><br>
 
