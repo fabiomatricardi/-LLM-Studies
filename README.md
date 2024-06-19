@@ -176,6 +176,9 @@ python311 -m venv venv
 pip install --upgrade langchain langchain-community faiss-cpu tiktoken duckduckgo-search llama-cpp-python rich newspaper3k easygui lxml_html_clean streamlit
 ```
 
+[GGUF MODEL
+](https://huggingface.co/QuantFactory/Fox-1-1.6B-GGUF/tree/main)
+
 ##### RESOURCES:
 https://python.langchain.com/v0.2/docs/integrations/chat/llamacpp/
 
