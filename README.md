@@ -103,6 +103,13 @@ https://docs.gptr.dev/docs/gpt-researcher/pip-package
 > EasyGUI is a module for very simple, very easy GUI programming in Python. EasyGUI is different from other GUI generators in that EasyGUI is NOT event-driven. Instead, all GUI interactions are invoked by simple function calls.<br>
 > EasyGui provides an easy-to-use interface for simple GUI interaction with a user. It does not require the programmer to know anything about tkinter, frames, widgets, callbacks or lambda.<br>
 > EasyGUI runs on Python 2 and 3, and does not have any dependencies.
+<br><br>
+        
+<img src='https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3qez20g434gncjrrxep6.png' height=200>
+
+- ### Code snippets
+- https://dev.to/_estheradebayo/6-awesome-tools-that-turn-code-snippets-to-images-54fo
+- https://carbon.now.sh/
 
 <br><br><br>
 <img src='https://scontent-mxp2-1.xx.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=e280be&_nc_ohc=gHe9SH5Q39oQ7kNvgF40WF2&_nc_ht=scontent-mxp2-1.xx&oh=00_AYC2pLd7XyxG2PbimvpfsgvSoenwfHnZ0smUp7kV8OLsew&oe=66788A39' width=200>
