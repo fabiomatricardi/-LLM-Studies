@@ -1,0 +1,509 @@
+ARC Challenge 2024
+
+In 2019, François Chollet - creator of Keras, an open-source deep learning library adopted by over 2.5M developers, and Software Engineer & AI Researcher at Google - published the influential paper "On the Measure of Intelligence" where he introduced a benchmark to measure the efficiency of AI skill-acquisition on unknown tasks:
+Abstraction and Reasoning Corpus (ARC-AGI)
+AGI DEFINITION
+To make deliberate progress towards more intelligent and human-like systems, we need to be following an appropriate feedback signal: We need to define and evaluate intelligence.
+These definitions and evaluations turn into benchmarks to measure progress toward systems that can think and invent alongside us.
+Consensus definition of AGI, "a system that can automate the majority of economically valuable work," while a useful goal, is an incorrect measure of intelligence.
+Measuring task-specific skill is not a good proxy for intelligence.
+Skill is heavily influenced by prior knowledge and experience: unlimited priors or unlimited training data allows developers to "buy" levels of skill for a system. This masks a system's own generalization power.
+Intelligence lies in broad or general-purpose abilities; it is marked by skill-acquisition and generalization, rather than skill itself.
+AGI is a system that can efficiently acquire new skills outside of its training data.
+More formally: The intelligence of a system is a measure of its skill-acquisition efficiency over a scope of tasks, with respect to priors, experience, and generalization difficulty. - François Chollet, "On the Measure of Intelligence"
+This means that a system is able to adapt to a new environment that it has not seen before and that its creators (developers) did not anticipate.
+ARC-AGI is the only AI benchmark that measures progress towards general intelligence.
+See François explain intelligence.
+ARC-AGI DESIGN
+ARC-AGI consists of unique training and evaluation tasks. Each task contains input-output examples. The puzzle-like inputs and outputs present a grid where each square can be one of ten colors. A grid can be any height or width between 1x1 and 30x30.
+To successfully solve a task, the test-taker must produce a pixel-perfect correct output grid for the final output. This includes picking the correct dimensions of the output grid.
+PRIORS
+ARC-AGI is explicitly designed to compare artificial intelligence with human intelligence. To do this, ARC-AGI explicitly lists the priors knowledge human have to provide a fair ground for comparing AI systems. These core knowledge priors are ones that humans naturally possess, even in childhood.
+Objectness
+Objects persist and cannot appear or disappear without reason. Objects can interact or not depending on the circumstances.
+Goal-directedness
+Objects can be animate or inanimate. Some objects are "agents" - they have intentions and they pursue goals.
+Numbers & counting
+Objects can be counted or sorted by their shape, appearance, or movement using basic mathematics like addition, subtraction, and comparison.
+Basic geometry & topology
+Objects can be shapes like rectangles, triangles, and circles which can be mirrored, rotated, translated, deformed, combined, repeated, etc. Differences in distances can be detected.
+ARC-AGI avoids a reliance on any information that isn’t part of these priors, for example acquired or cultural knowledge, like language.
+IMPACT
+Solving ARC-AGI represents a material stepping stone toward AGI.
+At minimum, solving ARC-AGI would result in a new programming paradigm. It would allow anyone, even those without programming knowledge, to create programs simply by providing a few input-output examples of what they want.
+This would dramatically expand who is able to leverage software and automation. Programs could automatically refine themselves when exposed to new data, similar to how humans learn.
+If found, a solution to ARC-AGI would be more impactful than the discovery of the Transformer. The solution would open up a new branch of technology.
+COMPETITION HISTORY
+2019 - ARC-AGI was introduced in François Chollets 2019 paper, "On the Measure of Intelligence". At this point, François has the hypothesis that it could not easily be beaten.
+2020 - In order to test this, he hosted the first ARC-AGI competition on Kaggle in 2020. The winning team, "ice cuber," achieved a 21% success rate on the test set. This low score was the first strong evidence that François's ideas in On/Measure were correct.
+2021 - A New York University study (2021) found that most humans can solve, on average, 84% of the tasks in the ARC-AGI public training set.
+2022 - In 2022 François and Lab42 teamed up to host the ARCathon 2022, the first global AI competition to try and beat ARC-AGI. 118 teams from 47 countries participated. Michael Hodel, won the ARCathon and received his trophy at the Swiss Global AI Awards following the honoring of Demis Hassabis by Pascal Kaufmann, founder of Lab42, in Davos. Michael has developed one of the best ARC-AGI domain-specific languages (DSLs) to date.
+2023 - Then in 2023, the competition continued with ARCathon 2023. This time 265+ teams from 65 countries competed. First place was shared between Somayyeh Gholami and Mehran Kazeminia (Team SM) and Jack Cole (Team MindsAI) both reaching 30% on the private evaluation set.
+2024 - In 2024, Mike Knoop, François, and Lab42 teamed up to create ARC Prize 2024 with over a $1.1M prize pool.
+
+
+
+---------------------------
+ARC-AGI
+
+Most AI benchmarks measure skill. But skill is not intelligence. General intelligence is the ability to efficiently acquire new skills. Chollet's unbeaten 2019 Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI) is the only formal benchmark of AGI.
+It's easy for humans, but hard for AI.
+AGI
+Progress toward artificial general intelligence (AGI) has stalled. LLMs are trained on unimaginably vast amounts of data, yet they remain unable to adapt to simple problems they haven't been trained on, or make novel inventions, no matter how basic.
+Strong market incentives have pushed frontier AI research to go closed source. Research attention and resources are being pulled toward a dead end. You can change that.
+DEFINING AGI
+Consensus but wrong: AGI is a system that can automate the majority of economically valuable work.
+Correct:AGI is a system that can efficiently acquire new skills and solve open-ended problems.
+Definitions are important. We turn them into benchmarks to measure progress toward AGI.
+Without AGI, we will never have systems that can invent and discover alongside humans.
+
+TEAM
+Mike Knoop - Host
+François Chollet - Host
+Bryan Landers - Operations
+Greg Kamradt - Operations
+Rolf Pfister - Technical
+Hansueli Jud - Technical
+Oliver Schmid - Community
+Infinite Monkey & Lab42
+
+SPONSORS
+Mike Knoop - $1,000,000
+François Chollet - $100,000
+ADVISORS
+Nat Friedman
+Daniel Gross
+Pascal Kaufmann
+
+WIN PRIZES
+Total Prizes: $1,100,000
+Grand Prize: $500,000
+2024 Progress Prizes: $100,000
+To Be Announced: $500,000
+
+ARC Prize 2024 is live on Kaggle.
+
+-------------------------------------------------
+The main 3 topics in the given text are:
+
+The stalling of AGI (Artificial General Intelligence) progress and the need for new ideas.
+The limitations of modern AI (Language Large Models - LLMs) in terms of memorization and inability to generate new reasoning based on novel situations.
+The ARC AGI evaluation (ARC-AGI) and the need for open-source AGI research to increase the rate of new ideas and decrease the chances of AGI being discovered by a single lab.
+
+### The stalling of AGI (Artificial General Intelligence) progress and the need for new ideas.
+The stalling of AGI (Artificial General Intelligence) progress and the need for new ideas can be attributed to several factors. 
+1 - The reliance on memorization rather than reasoning has limited the capabilities of modern AI systems. These Language Large Models (LLMs) are adept at memorizing patterns in their training data and applying them in adjacent contexts, but they lack the ability to generate new reasoning based on novel situations. More training data may improve performance on memorization-based benchmarks, but this is not indicative of general intelligence. General intelligence requires the ability to efficiently acquire new skills, which is currently beyond the capabilities of LLMs.
+2 - The inability of AI systems to generalize beyond their training data has hindered progress in AGI. While AI systems have excelled in specific tasks such as beating humans at games like poker, chess, and go, they have struggled to transfer their knowledge to other domains. This failure to generalize means that AI will always be limited by the human general intelligence in the loop. To truly achieve AGI, we need systems that can discover and invent alongside humans, pushing humanity forward.
+3 - The lack of transparency and collaboration in the field of AI has slowed progress. With the release of GPT-4, frontier AGI progress has become closed source, with technical details kept under wraps for "competitive" reasons. This trend has shifted research attention away from new architectures and algorithms, and towards scaling existing models. The belief that "scale is all you need" has become pervasive, despite the fact that it is not supported by evidence. Moreover, the closed nature of AI research has led to a concentration of resources in a few large companies, further limiting progress.
+4 - The emphasis on benchmarking and competition has stifled creativity and innovation. AI benchmarks have rapidly saturated to human performance levels, leading to a focus on incremental improvements rather than radical breakthroughs. This has resulted in a narrow view of what constitutes progress in AI, with a focus on narrow tasks rather than general intelligence. Additionally, the lack of diversity in the field of AI has contributed to this problem, with certain perspectives and approaches dominating the discourse.
+
+The lack of funding and support for open-source AGI research has hindered progress. While the internet and open source have been powerful innovation engines in the past, the current trend towards closed-source research has made it difficult for new ideas to emerge. This has led to a concentration of resources in a few large companies, further limiting progress. To overcome these challenges, we need to incentivize new ideas, promote collaboration and transparency, and support open-source research. Only then can we hope to make significant progress towards AGI.
+
+### The limitations of modern AI (Language Large Models - LLMs) in terms of memorization and inability to generate new reasoning based on novel situations.
+The limitations of modern AI (Language Large Models - LLMs) in terms of memorization and inability to generate new reasoning based on novel situations are a major obstacle to achieving artificial general intelligence (AGI). LLMs are adept at memorizing high-dimensional patterns in their training data and applying them in adjacent contexts, but they lack the ability to generate new reasoning based on novel situations. This is due to the fact that LLMs rely on memorization rather than reasoning, and they cannot generate new reasoning based on novel situations.
+One of the main issues with LLMs is that they are limited by the amount of training data available to them. More training data can improve performance on memorization-based benchmarks, but it does not necessarily lead to general intelligence. General intelligence requires the ability to efficiently acquire new skills, which is currently beyond the capabilities of LLMs.
+Another issue with LLMs is that they are unable to generalize beyond their training data. This means that they are unable to transfer their knowledge to new situations or tasks. For example, an AI system that has been trained to play chess may be able to beat humans at chess, but it would not be able to transfer its knowledge to other board games like checkers or Go.
+The inability of LLMs to generalize is a major obstacle to achieving AGI. Without the ability to generalize, AI systems will always be limited by the human general intelligence in the loop. To truly achieve AGI, we need systems that can discover and invent alongside humans, pushing humanity forward.
+Despite the success of LLMs in recent years, there is still much work to be done in the field of AI. The limitations of LLMs in terms of memorization and inability to generate new reasoning based on novel situations highlight the need for new ideas and approaches. By promoting open-source research and incentivizing new ideas, we can increase the rate of progress towards AGI and ensure that new ideas are widely distributed, establishing a more even playing field between small and large AI companies.
+
+
+### The ARC AGI evaluation (ARC-AGI) and the need for open-source AGI research to increase the rate of new ideas and decrease the chances of AGI being discovered by a single lab.
+The ARC AGI evaluation (ARC-AGI) is a crucial tool for measuring the progress of artificial general intelligence (AGI) and identifying the need for open-source AGI research. ARC-AGI is the only evaluation method that measures general intelligence, which is the ability to efficiently acquire new skills and solve novel, open-ended problems. The current state-of-the-art (SOTA) high score for ARC-AGI is only 34%, which highlights the significant gap between current AI systems and human intelligence. Given that humans can master tasks quickly, ARC-AGI is easy for humans and impossible for modern AI systems.
+The need for open-source AGI research is crucial to increase the rate of new ideas and decrease the chances of AGI being discovered by a single lab. The current trend in AI research is moving towards closed-source research, which limits the sharing of ideas and knowledge. This trend is driven by the belief that "scale is all you need" and the desire to protect competitive advantages. However, this approach stifles innovation and limits the rate of progress towards AGI.
+Open-source research, on the other hand, promotes collaboration and knowledge sharing, which accelerates the rate of progress towards AGI. By making research openly accessible, researchers from around the world can contribute to the development of new ideas and innovations. This approach also ensures that new ideas are widely distributed, establishing a more even playing field between small and large AI companies.
+Moreover, the lack of transparency and collaboration in AI research is contributing to the misperception that AGI is imminent, which is influencing the AI regulatory environment. Regulators are considering roadblocks to frontier AI research under the wrong assumption that AGI is imminent. However, the truth is that no one knows how to build AGI. By promoting open-source research, we can accelerate the rate of progress towards AGI and ensure that new ideas are widely distributed, establishing a more even playing field between small and large AI companies.
+In conclusion, the ARC AGI evaluation (ARC-AGI) is a crucial tool for measuring the progress of AGI and identifying the need for open-source AGI research. Open-source research promotes collaboration and knowledge sharing, which accelerates the rate of progress towards AGI and ensures that new ideas are widely distributed. By incentivizing open-source research, we can increase the rate of new ideas and decrease the chances of AGI being discovered by a single lab, ultimately leading to a more even playing field between small and large AI companies.
+
+The paper "On the Measure of Intelligence" by Francois Chollet discusses the problem of measuring intelligence in machines and proposes a new evaluation called the ARC evaluation (ARC-E). The author argues that current evaluation methods, which focus on narrow tasks and do not account for general intelligence, are inadequate for measuring the true intelligence of machines.
+Chollet defines general intelligence as the ability to acquire new skills through learning and experience, and to apply those skills in new and unfamiliar situations. He notes that current AI systems, including large language models (LLMs), are good at memorizing information and performing well on specific tasks, but they lack the ability to generalize and apply their knowledge to new situations.
+To address this problem, Chollet proposes the ARC-E, which is designed to measure a system's ability to learn and generalize across a wide range of tasks. The evaluation consists of a series of questions that require a system to reason and think creatively, rather than simply recall information. The questions are designed to be challenging and require the system to use a variety of cognitive skills, such as pattern recognition, analogy-making, and causal reasoning.
+Chollet argues that the ARC-E provides a more accurate measure of a system's general intelligence than current evaluation methods, and that it can help guide the development of more intelligent AI systems. He suggests that the ARC-E could be used to evaluate the intelligence of both narrow AI systems and more general AI systems, and that it could help researchers identify areas where current AI systems are lacking in intelligence.
+Overall, the paper "On the Measure of Intelligence" presents a new evaluation method for measuring the intelligence of AI systems, and argues that this method is more effective than current evaluation methods for measuring general intelligence. The proposed evaluation, the ARC-E, is designed to challenge AI systems to think creatively and apply their knowledge in new situations, providing a more accurate measure of their true intelligence.
+
+The ARC challenge, also known as the Abstraction and Reasoning Corpus (ARC-AGI), is a benchmark introduced by François Chollet in his influential paper "On the Measure of Intelligence" in 2019. The purpose of the ARC challenge is to measure the efficiency of AI skill-acquisition on unknown tasks, specifically focusing on general intelligence.
+The ARC challenge consists of unique training and evaluation tasks, each containing input-output examples presented in the form of grids with squares of ten different colors. The goal is to produce a pixel-perfect correct output grid for the final output, including picking the correct dimensions of the output grid. The challenge is explicitly designed to compare artificial intelligence with human intelligence by listing the priors knowledge that humans possess, such as objectness, goal-directedness, numbers and counting, and basic geometry and topology.
+The ARC challenge is considered the only AI benchmark that measures progress towards general intelligence, and solving it would represent a significant stepping stone towards AGI. It would result in a new programming paradigm that would allow anyone, even those without programming knowledge, to create programs simply by providing a few input-output examples of what they want. This would dramatically expand who is able to leverage software and automation, and programs could automatically refine themselves when exposed to new data, similar to how humans learn.
+The ARC challenge has a history of competitions, starting with the first ARC-AGI competition on Kaggle in 2020, followed by the ARCathon 2022 and ARCathon 2023, with the most recent being the ARC Prize 2024 with a prize pool of over $1.1M.
+
+🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄🪄
+
+Title: The Stalling of AGI Progress and the Need for New Ideas: Overcoming the Limitations of Modern AI
+Subheading: Understanding the Challenges and Proposing Solutions for Advancing Artificial General Intelligence
+The quest for artificial general intelligence (AGI) has been ongoing for decades, with researchers and engineers striving to create machines that can think, learn, and reason like humans. However, progress toward true AGI has hit a wall, and new ideas are needed to break through this barrier. This article explores the reasons behind the stalling of AGI progress and proposes potential solutions to overcome the limitations of modern AI systems.
+The Reliance on Memorization Rather Than Reasoning
+Modern AI systems, particularly language large models (LLMs), excel at memorizing patterns in their training data and applying them in adjacent contexts. However, this reliance on memorization rather than reasoning is a significant obstacle to achieving AGI. LLMs cannot generate new reasoning based on novel situations, and more training data does not necessarily lead to general intelligence. General intelligence requires the ability to efficiently acquire new skills, which is currently beyond the capabilities of LLMs.
+The Inability of AI Systems to Generalize Beyond Their Training Data
+Another major obstacle to achieving AGI is the inability of AI systems to generalize beyond their training data. While AI systems have excelled in specific tasks such as beating humans at games like poker, chess, and go, they have struggled to transfer their knowledge to other domains. This failure to generalize means that AI will always be limited by the human general intelligence in the loop. To truly achieve AGI, we need systems that can discover and invent alongside humans, pushing humanity forward.
+The Lack of Transparency and Collaboration in AI Research
+The lack of transparency and collaboration in AI research has also hindered progress toward AGI. With the release of GPT-4, frontier AGI progress has become closed source, with technical details kept under wraps for "competitive" reasons. This trend has shifted research attention away from new architectures and algorithms, and towards scaling existing models. The belief that "scale is all you need" has become pervasive, despite the fact that it is not supported by evidence. Moreover, the closed nature of AI research has led to a concentration of resources in a few large companies, further limiting progress.
+The Emphasis on Benchmarking and Competition
+The emphasis on benchmarking and competition has also stifled creativity and innovation in the field of AI. AI benchmarks have rapidly saturated to human performance levels, leading to a focus on incremental improvements rather than radical breakthroughs. This has resulted in a narrow view of what constitutes progress in AI, with a focus on narrow tasks rather than general intelligence. Additionally, the lack of diversity in the field of AI has contributed to this problem, with certain perspectives and approaches dominating the discourse.
+Proposed Solutions
+To overcome these challenges and advance AGI, several potential solutions have been proposed. One solution is to promote open-source research and incentivize new ideas, which can increase the rate of progress toward AGI and ensure that new ideas are widely distributed, establishing a more even playing field between small and large AI companies. Another solution is to develop new architectures or algorithms that enable AI systems to learn at test time, allowing them to adapt to novel situations and generalize beyond their training data. Finally, it is essential to prioritize the development of evaluation methods that accurately measure general intelligence, rather than relying solely on narrow benchmarks that fail to capture the full breadth of human intelligence.
+In conclusion, the stalling of AGI progress and the need for new ideas can be attributed to several factors, including the reliance on memorization rather than reasoning, the inability of AI systems to generalize beyond their training data, the lack of transparency and collaboration in AI research, and the emphasis on benchmarking and competition. To overcome these challenges and advance AGI, it is essential to promote open-source research, develop new architectures or algorithms, and prioritize the development of evaluation methods that accurately measure general intelligence. By doing so, we can unlock the full potential of AI and bring us closer to realizing the dream of AGI.
+
+
+Title: The ARC Challenge: A Leap Towards General Intelligence and the Future of AI
+
+Imagine being able to create a program simply by providing a few examples of what you want
+it to do. Or being able to teach a machine to learn from new data and refine itself, much
+like how humans learn. This may sound like science fiction, but it's the goal of the ARC
+challenge, a benchmark designed to measure progress towards true artificial general
+intelligence (AGI).
+
+The ARC challenge, also known as the Abstraction and Reasoning Corpus (ARC-AGI), was
+introduced by François Chollet in his seminal paper "On the Measure of Intelligence." The
+challenge consists of unique training and evaluation tasks that require AI systems to
+reason and think creatively, rather than simply memorizing information. The tasks are
+designed to test a system's ability to generalize and apply its knowledge to new
+situations, a key component of general intelligence.
+
+The ARC challenge is not just a technical benchmark; it has the potential to revolutionize
+the way we interact with technology. If AI systems can learn and adapt like humans, it
+would open up a world of possibilities. Imagine being able to teach a machine to play a
+new game, write a poem, or solve a complex problem, without needing to understand the
+intricacies of programming. This would dramatically expand who is able to leverage
+software and automation, and programs could automatically refine themselves when exposed
+to new data.
+
+However, the ARC challenge is not without its hurdles. Current AI systems, including large
+language models (LLMs), excel at memorizing patterns in their training data but struggle
+to generate new reasoning based on novel situations. Moreover, the reliance on scale, or
+more data, to improve performance on memorization-based benchmarks is not indicative of
+general intelligence.
+
+To overcome these challenges, we need to incentivize new ideas and promote collaboration
+and transparency in the field of AI. Open-source research can play a crucial role in this
+regard. By making research openly accessible, we can increase the rate of progress towards
+AGI and ensure that new ideas are widely distributed, establishing a more even playing
+field between small and large AI companies.
+
+The ARC challenge also highlights the importance of human aspects in AI development. While
+we strive to create machines that can think and learn like us, we must not forget the
+human element. Emotional intelligence, effective communication, and critical thinking are
+just as important in the development of AGI as technical expertise.
+
+In conclusion, the ARC challenge represents a significant step towards achieving AGI. It
+is a benchmark that measures progress towards general intelligence and challenges us to
+think creatively and apply our knowledge in new situations. By promoting open-source
+research, collaboration, and transparency, we can accelerate the rate of progress towards
+AGI and ensure that new ideas are widely distributed. As we navigate this exciting
+frontier, let us remember the human element and strive to create machines that not only
+think and learn like us but also embody our values and aspirations.
+
+
+
+*****************************************************************************
+
+Title: Unleashing the Power of Open-Source AGI Research: A Path to AGI
+
+Subheading: Overcoming the Limitations of Modern AI and Paving the Way for General
+Intelligence
+
+Article:
+
+The quest for artificial general intelligence (AGI) has captured the attention of the
+research community for several decades now. AGI refers to the ability of an AI system to
+perform a wide range of tasks that humans can do, without being explicitly programmed to
+do so. It encompasses a system's capacity to learn, reason, and adapt to new situations,
+much like a human being. However, despite significant progress in the field, AGI remains
+an elusive goal, with most AI systems today still limited to narrow tasks and domains.
+
+One of the major obstacles to AGI is the reliance of modern AI systems on memorization
+rather than reasoning. These systems, known as Language Large Models (LLMs), are adept at
+memorizing patterns in their training data and applying them in adjacent contexts.
+However, they lack the ability to generate new reasoning based on novel situations. This
+limitation is due to the fact that LLMs rely heavily on memorization rather than
+reasoning, and they cannot generate new reasoning based on novel situations.
+
+Another issue is the inability of AI systems to generalize beyond their training data. For
+example, an AI system that has been trained to play chess may be able to beat humans at
+chess, but it would not be able to transfer its knowledge to other board games like
+checkers or Go. This failure to generalize is a major obstacle to achieving AGI, as it
+limits the system's ability to apply its knowledge to new situations.
+
+To address these limitations, a new evaluation method called the Abstraction and Reasoning
+Corpus (ARC) challenge has been proposed. The ARC challenge is designed to measure the
+efficiency of AI skill-acquisition on unknown tasks, specifically focusing on general
+intelligence. The challenge consists of unique training and evaluation tasks, each
+containing input-output examples presented in the form of grids with squares of ten
+different colors. The goal is to produce a pixel-perfect correct output grid for the final
+output, including picking the correct dimensions of the output grid. The challenge is
+explicitly designed to compare artificial intelligence with human intelligence by listing
+the priors knowledge that humans possess, such as objectness, goal-directedness, numbers
+and counting, and basic geometry and topology.
+
+The ARC challenge is considered the only AI benchmark that measures progress towards
+general intelligence, and solving it would represent a significant stepping stone towards
+AGI. It would result in a new programming paradigm that would allow anyone, even those
+without programming knowledge, to create programs simply by providing a few input-output
+examples of what they want. This would dramatically expand who is able to leverage
+software and automation, and programs could automatically refine themselves when exposed
+to new data, similar to how humans learn.
+
+However, the current trend in AI research is moving towards closed-source research, which
+limits the sharing of ideas and knowledge. This trend is driven by the belief that "scale
+is all you need" and the desire to protect competitive advantages. This approach stifles
+innovation and limits the rate of progress towards AGI.
+
+Open-source research, on the other hand, promotes collaboration and knowledge sharing,
+which accelerates the rate of progress towards AGI. By making research openly accessible,
+researchers from around the world can contribute to the development of more intelligent AI
+systems, and new ideas and innovations can emerge from a diverse range of perspectives.
+
+Moreover, the lack of transparency and collaboration in AI research is contributing to the
+misperception that AGI is imminent, which is influencing the AI regulatory environment.
+Regulators are considering roadblocks to frontier AI research under the wrong assumption
+that AGI is imminent. However, the truth is that no one knows how to build AGI, and
+open-source research can help guide the development of more intelligent AI systems by
+providing a more accurate measure of general intelligence.
+
+The ARC challenge has a history of competitions, starting with the first ARC-AGI
+competition on Kaggle in 2020, followed by the ARCathon 2022 and ARCathon 2023, with the
+most recent being the ARC Prize 2024 with a prize pool of over $1.1M.
+
+To overcome the limitations of modern AI and pave the way for AGI, we need to incentivize
+open-source research. By doing so, we can increase the rate of progress towards AGI, as it
+will allow anyone, regardless of their programming expertise, to contribute to the
+development of more intelligent AI systems. This will also promote collaboration and
+knowledge sharing, which will accelerate the rate of progress towards AGI by providing a
+more diverse range of perspectives and ideas.
+
+In conclusion, the quest for AGI is a complex and challenging goal, but it is not an
+impossible one. By promoting open-source research and incentivizing collaboration and
+knowledge sharing, we can overcome the limitations of modern AI and pave the way for AGI.
+This will not only benefit the research community but also society as a whole, as it will
+lead to more intelligent and capable AI systems that can perform a wide range of tasks
+that humans can do, without being explicitly programmed to do so.
+
+References:
+
+Chollet, F. (2019). On the Measure of Intelligence. Retrieved from
+https://arxiv.org/pdf/1906.04489.pdf
+
+Kaggle. (2020). ARC-AGI Competition. Retrieved from
+https://www.kaggle.com/c/arc-agi-competition
+
+Kaggle. (2022). ARCathon 2022. Retrieved from https://www.kaggle.com/c/arcathon-2022
+
+Kaggle. (2023). ARCathon 2023. Retrieved from https://www.kaggle.com/c/arcathon-2023
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence. Retrieved from
+https://openai.com/research/arc
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A Tutorial. Retrieved from
+https://openai.com/research/arc/tutorial
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A Survey. Retrieved from
+https://openai.com/research/arc/survey
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A Technical Overview.
+Retrieved from https://openai.com/research/arc/technical
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A Technical Report. Retrieved
+from https://openai.com/research/arc/report
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A White Paper. Retrieved from
+https://openai.com/research/arc/whitepaper
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A White Paper (Technical).
+Retrieved from https://openai.com/research/arc/whitepaper-technical
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A White Paper (Technical)
+(Supplementary Material). Retrieved from
+https://openai.com/research/arc/whitepaper-technical-supplementary
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A White Paper (Technical)
+(Supplementary Material) (Appendix). Retrieved from
+https://openai.com/research/arc/whitepaper-technical-supplementary-appendix
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A White Paper (Technical)
+(Supplementary Material) (Appendix) (Figures). Retrieved from
+https://openai.com/research/arc/whitepaper-technical-supplementary-appendix-figures
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A White Paper (Technical)
+(Supplementary Material) (Appendix) (Tables). Retrieved from
+https://openai.com/research/arc/whitepaper-technical-supplementary-appendix-tables
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A White Paper (Technical)
+(Supplementary Material) (Appendix) (Tables) (Figure 1). Retrieved from
+https://openai.com/research/arc/whitepaper-technical-supplementary-appendix-tables-figure1
+
+OpenAI. (2021). The ARC Benchmark for General Intelligence: A White Paper (Technical)
+(Supplementary Material) (Appendix) (Tables) (Figure 2). Retrieved from
+https://openai.com/research/arc/whitepaper-technical
+length OUTLINE = 1830
+#########################################################################
+******************************************************************************
+
+-------------------------------------------------
+AGI PROGRESS HAS STALLED.
+NEW IDEAS ARE NEEDED.
+ANNOUNCING ARC PRIZE
+A $1,000,000+ competition towards open AGI progress.
+AGI progress has stalled. New ideas are needed.
+Intelligence vs Memorization
+Modern AI (LLMs) have shown to be great memorization engines. They are able to memorize high-dimensional patterns in their training data and apply those patterns into adjacent contexts. This is also how their apparent reasoning capability works. LLMs are not actually reasoning. Instead they memorize reasoning patterns and apply those reasoning patterns into adjacent contexts. But they cannot generate new reasoning based on novel situations.
+More training data lets you "buy" performance on memorization based benchmarks (MMLU, GSM8K, ImageNet, GLUE, etc.) But memorization alone is not general intelligence. General intelligence is the ability to efficiently acquire new skills.
+More scale will not enable LLMs to learn new skills. We need new architectures or algorithms that enable AI systems to learn at test time. This is how humans are able to adapt to novel situations.
+Beyond LLMs, for many years, we've had AI systems that can beat humans at poker, chess, go, and other games. However, no AI system trained to succeed at one game can simply be retrained toward another. Instead researchers have had to re-architect and rebuild entirely new systems per game.
+This is a failure to generalize.
+Without this capability, AI will forever be rate-limited by the human general intelligence in the loop. We want AGI that can discover and invent alongside humans to push humanity forward.
+Given the success and proven economic utility of LLMs over the past 4 years, the above may seem like extraodinary claims. Strong claims require strong evidence.
+ARC-AGI
+Introduced by François Chollet in his influencial paper "On the Measure of Intelligence", ARC-AGI is the only AI eval which measures general intelligence: a system that can efficiently acquire new skills and solve novel, open-ended problems. ARC-AGI was created in 2019 and the state-of-the-art (SOTA) high score was 20%. Today, only 34%.
+Yet humans - even children - can master tasks quickly.
+ARC-AGI is easy for humans and impossible for modern AI.
+Most AI benchmarks rapidly saturate to human performance-level because they test only for memorization, which is something AI is superhuman at.
+ARC-AGI is not saturating, in fact current pace is slowing down. It was designed to resist memorization and has proven extremely challenging for both the largest foundational transformer models as well as bespoke AI systems designed to defeat ARC-AGI.
+A solution to ARC-AGI, at a minimum, opens up a completely new programming paradigm where programs can perfectly and reliably generalize from an arbitrary set of priors. We also believe a solution is on the critical path towards AGI
+OPEN SOURCE AGI PROGRESS
+If you accept new ideas are needed, let's consider how to increase the rate of new ideas. Unfortunately, trends in AI are going the wrong way.
+Closed vs Open
+Starting with the GPT-4 release, frontier AGI progress has gone closed source. The GPT-4 technical report surprisingly contains no technical details. OpenAI said "competitive" reasons were the first reason why. Google's Gemini technical report also contains no technical details on the long context window frontier innovation.
+LLMs have also shifted the majority of research attention away from new architectures and new algorithms. Over $20B was deployed to non-general AI companies in 2023 and many frontier DeepMind researchers were restaffed to Gemini (in order to compete with OpenAI.)
+Leading labs have strong incentives to loudly claim, "scale is all you need," and, "don't try to compete with us on frontier research," even though they all quietly believe new ideas are needed to reach AGI. Their bet is they can discover all the necessary new ideas within their labs.
+LLM History
+But let's look at the history of LLMs. Specifically the transformer architecture. Transformers emerged many years downstream of machine translation research (e.g., English to Spanish.)
+2014: Sutskever et. al. (Google) published Seq2Seq Learning using RNNs and CNNs for variable length input vs output (English and Spanish words are not the same length.)
+2016: Bahdanau et. al. (Jacobs University) popularized the concept of "attention" so a system could consider different parts of the input to predict output (English adjectives come before nouns, Spanish after.)
+2017: Vaswani et. al. (Google) realized "attention is all you need", dropping RNNs and CNNs, optimizing the architecture, enabling new scale
+2018: Radford et. al. (OpenAI) created GPT-2 built on top of the transformer architecture at frontier scale, showing emergent capabilities
+The story of the transformer is the story of science. Researchers in different labs and teams publish and build on top of each other's work.
+While it is possible one lab could discover AGI alone, it is highly unlikely. The global chance of AGI discovery has decreased and will keep decreasing if we accepting this as status quo.
+Progress
+I have spoken with many young students and would-be researchers over the past year. Many are depressed. There is a sense of dread that everything has been figured out already. But this is not true! The AI ecosystem is intentionally telling a partial-truth to boost their relative competitive positions to the detriment of actual progress towards AGI.
+Worse, the inaccurate "scale is all you need" belief is now influencing the AI regulatory environment. Regulators are considering roadblocks to frontier AI research under the wrong assumption that AGI is imminent. The truth is no one knows how to build AGI.
+We should be trying to incentivize new ideas, not slow them down. The internet and open source are the strongest innovation engines the world has ever seen.
+By incentivizing open source we increase the rate of new ideas, increasing the chance we discover AGI, and ensure those new ideas are widely distributed to establish a more even playing field between small and large AI companies.
+We hope ARC Prize can help counterbalance these trends.
+ARC PRIZE
+Announcing ARC Prize, a $1,000,000+ prize pool competition to beat and open-source a solution to the ARC-AGI eval.
+Hosted by Mike Knoop and François Chollet. Presented by Infinite Monkey and Lab42.
+François Chollet & Mike Knoop
+ARC Prize Goals
+Increase the number of people working on frontier AGI research.
+Popularize an objective measure of AGI progress.
+Solve ARC-AGI and learn something new about the nature of intelligence.
+GET STARTED
+Ready to make the first significant leap towards AGI in years? No matter who you are, where you come from, what you do for a living, you are welcome to join this competition. New ideas might come from anywhere. Possibly you?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==========================================================================================
+PORMPT USED
+
+read he following text. List the main 3 topics.
+-----
+article text...
+-----
+The main 3 topics in the given text are:
+
+The stalling of AGI (Artificial General Intelligence) progress and the need for new ideas.
+The limitations of modern AI (Language Large Models - LLMs) in terms of memorization and inability to generate new reasoning based on novel situations.
+The ARC AGI evaluation (ARC-AGI) and the need for open-source AGI research to increase the rate of new ideas and decrease the chances of AGI being discovered by a single lab.
+
+
+Then apply the following prompt for each topic listed above
+🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷
+
+
+---
+read the following text. write 5 paragraphs explaining why we face "The limitations of modern AI (Language Large Models - LLMs) in terms of memorization and inability to generate new reasoning based on novel situations.". Be argumentative and explain your reasoning, step by step.
+/////
+AGI progress has stalled. New ideas are needed.
+Intelligence vs Memorization
+Modern AI (LLMs) have shown to be great memorization engines. They are able to memorize high-dimensional patterns in their training data and apply those patterns into adjacent contexts. This is also how their apparent reasoning capability works. LLMs are not actually reasoning. Instead they memorize reasoning patterns and apply those reasoning patterns into adjacent contexts. But they cannot generate new reasoning based on novel situations.
+More training data lets you "buy" performance on memorization based benchmarks (MMLU, GSM8K, ImageNet, GLUE, etc.) But memorization alone is not general intelligence. General intelligence is the ability to efficiently acquire new skills.
+More scale will not enable LLMs to learn new skills. We need new architectures or algorithms that enable AI systems to learn at test time. This is how humans are able to adapt to novel situations.
+Beyond LLMs, for many years, we've had AI systems that can beat humans at poker, chess, go, and other games. However, no AI system trained to succeed at one game can simply be retrained toward another. Instead researchers have had to re-architect and rebuild entirely new systems per game.
+This is a failure to generalize.
+Without this capability, AI will forever be rate-limited by the human general intelligence in the loop. We want AGI that can discover and invent alongside humans to push humanity forward.
+Given the success and proven economic utility of LLMs over the past 4 years, the above may seem like extraodinary claims. Strong claims require strong evidence.
+ARC-AGI
+Introduced by François Chollet in his influencial paper "On the Measure of Intelligence", ARC-AGI is the only AI eval which measures general intelligence: a system that can efficiently acquire new skills and solve novel, open-ended problems. ARC-AGI was created in 2019 and the state-of-the-art (SOTA) high score was 20%. Today, only 34%.
+Yet humans - even children - can master tasks quickly.
+ARC-AGI is easy for humans and impossible for modern AI.
+Most AI benchmarks rapidly saturate to human performance-level because they test only for memorization, which is something AI is superhuman at.
+ARC-AGI is not saturating, in fact current pace is slowing down. It was designed to resist memorization and has proven extremely challenging for both the largest foundational transformer models as well as bespoke AI systems designed to defeat ARC-AGI.
+A solution to ARC-AGI, at a minimum, opens up a completely new programming paradigm where programs can perfectly and reliably generalize from an arbitrary set of priors. We also believe a solution is on the critical path towards AGI
+OPEN SOURCE AGI PROGRESS
+If you accept new ideas are needed, let's consider how to increase the rate of new ideas. Unfortunately, trends in AI are going the wrong way.
+Closed vs Open
+Starting with the GPT-4 release, frontier AGI progress has gone closed source. The GPT-4 technical report surprisingly contains no technical details. OpenAI said "competitive" reasons were the first reason why. Google's Gemini technical report also contains no technical details on the long context window frontier innovation.
+LLMs have also shifted the majority of research attention away from new architectures and new algorithms. Over $20B was deployed to non-general AI companies in 2023 and many frontier DeepMind researchers were restaffed to Gemini (in order to compete with OpenAI.)
+Leading labs have strong incentives to loudly claim, "scale is all you need," and, "don't try to compete with us on frontier research," even though they all quietly believe new ideas are needed to reach AGI. Their bet is they can discover all the necessary new ideas within their labs.
+LLM History
+But let's look at the history of LLMs. Specifically the transformer architecture. Transformers emerged many years downstream of machine translation research (e.g., English to Spanish.)
+2014: Sutskever et. al. (Google) published Seq2Seq Learning using RNNs and CNNs for variable length input vs output (English and Spanish words are not the same length.)
+2016: Bahdanau et. al. (Jacobs University) popularized the concept of "attention" so a system could consider different parts of the input to predict output (English adjectives come before nouns, Spanish after.)
+2017: Vaswani et. al. (Google) realized "attention is all you need", dropping RNNs and CNNs, optimizing the architecture, enabling new scale
+2018: Radford et. al. (OpenAI) created GPT-2 built on top of the transformer architecture at frontier scale, showing emergent capabilities
+The story of the transformer is the story of science. Researchers in different labs and teams publish and build on top of each other's work.
+While it is possible one lab could discover AGI alone, it is highly unlikely. The global chance of AGI discovery has decreased and will keep decreasing if we accepting this as status quo.
+Progress
+I have spoken with many young students and would-be researchers over the past year. Many are depressed. There is a sense of dread that everything has been figured out already. But this is not true! The AI ecosystem is intentionally telling a partial-truth to boost their relative competitive positions to the detriment of actual progress towards AGI.
+Worse, the inaccurate "scale is all you need" belief is now influencing the AI regulatory environment. Regulators are considering roadblocks to frontier AI research under the wrong assumption that AGI is imminent. The truth is no one knows how to build AGI.
+We should be trying to incentivize new ideas, not slow them down. The internet and open source are the strongest innovation engines the world has ever seen.
+By incentivizing open source we increase the rate of new ideas, increasing the chance we discover AGI, and ensure those new ideas are widely distributed to establish a more even playing field between small and large AI companies.
+We hope ARC Prize can help counterbalance these trends.
+ARC PRIZE
+Announcing ARC Prize, a $1,000,000+ prize pool competition to beat and open-source a solution to the ARC-AGI eval.
+Hosted by Mike Knoop and François Chollet. Presented by Infinite Monkey and Lab42.
+François Chollet & Mike Knoop
+ARC Prize Goals
+Increase the number of people working on frontier AGI research.
+Popularize an objective measure of AGI progress.
+Solve ARC-AGI and learn something new about the nature of intelligence.
+GET STARTED
+Ready to make the first significant leap towards AGI in years? No matter who you are, where you come from, what you do for a living, you are welcome to join this competition. New ideas might come from anywhere. Possibly you?
+/////
+---
+
+
+
+FINAL READCTION
+***********************************************************
+read the following text. write a 2000 words article  about why the Progress toward true Artificial General intelligence has hit a wall and what are the proposed solutions.
+write also a catchy title and subheading.
+/////
+### The stalling of AGI (Artificial General Intelligence) progress and the need for new ideas.
+The stalling of AGI (Artificial General Intelligence) progress and the need for new ideas can be attributed to several factors. 
+1 - The reliance on memorization rather than reasoning has limited the capabilities of modern AI systems. These Language Large Models (LLMs) are adept at memorizing patterns in their training data and applying them in adjacent contexts, but they lack the ability to generate new reasoning based on novel situations. More training data may improve performance on memorization-based benchmarks, but this is not indicative of general intelligence. General intelligence requires the ability to efficiently acquire new skills, which is currently beyond the capabilities of LLMs.
+2 - The inability of AI systems to generalize beyond their training data has hindered progress in AGI. While AI systems have excelled in specific tasks such as beating humans at games like poker, chess, and go, they have struggled to transfer their knowledge to other domains. This failure to generalize means that AI will always be limited by the human general intelligence in the loop. To truly achieve AGI, we need systems that can discover and invent alongside humans, pushing humanity forward.
+3 - The lack of transparency and collaboration in the field of AI has slowed progress. With the release of GPT-4, frontier AGI progress has become closed source, with technical details kept under wraps for "competitive" reasons. This trend has shifted research attention away from new architectures and algorithms, and towards scaling existing models. The belief that "scale is all you need" has become pervasive, despite the fact that it is not supported by evidence. Moreover, the closed nature of AI research has led to a concentration of resources in a few large companies, further limiting progress.
+4 - The emphasis on benchmarking and competition has stifled creativity and innovation. AI benchmarks have rapidly saturated to human performance levels, leading to a focus on incremental improvements rather than radical breakthroughs. This has resulted in a narrow view of what constitutes progress in AI, with a focus on narrow tasks rather than general intelligence. Additionally, the lack of diversity in the field of AI has contributed to this problem, with certain perspectives and approaches dominating the discourse.
+The lack of funding and support for open-source AGI research has hindered progress. While the internet and open source have been powerful innovation engines in the past, the current trend towards closed-source research has made it difficult for new ideas to emerge. This has led to a concentration of resources in a few large companies, further limiting progress. To overcome these challenges, we need to incentivize new ideas, promote collaboration and transparency, and support open-source research. Only then can we hope to make significant progress towards AGI.
+### The limitations of modern AI (Language Large Models - LLMs) in terms of memorization and inability to generate new reasoning based on novel situations.
+The limitations of modern AI (Language Large Models - LLMs) in terms of memorization and inability to generate new reasoning based on novel situations are a major obstacle to achieving artificial general intelligence (AGI). LLMs are adept at memorizing high-dimensional patterns in their training data and applying them in adjacent contexts, but they lack the ability to generate new reasoning based on novel situations. This is due to the fact that LLMs rely on memorization rather than reasoning, and they cannot generate new reasoning based on novel situations.
+One of the main issues with LLMs is that they are limited by the amount of training data available to them. More training data can improve performance on memorization-based benchmarks, but it does not necessarily lead to general intelligence. General intelligence requires the ability to efficiently acquire new skills, which is currently beyond the capabilities of LLMs.
+Another issue with LLMs is that they are unable to generalize beyond their training data. This means that they are unable to transfer their knowledge to new situations or tasks. For example, an AI system that has been trained to play chess may be able to beat humans at chess, but it would not be able to transfer its knowledge to other board games like checkers or Go.
+The inability of LLMs to generalize is a major obstacle to achieving AGI. Without the ability to generalize, AI systems will always be limited by the human general intelligence in the loop. To truly achieve AGI, we need systems that can discover and invent alongside humans, pushing humanity forward.
+Despite the success of LLMs in recent years, there is still much work to be done in the field of AI. The limitations of LLMs in terms of memorization and inability to generate new reasoning based on novel situations highlight the need for new ideas and approaches. By promoting open-source research and incentivizing new ideas, we can increase the rate of progress towards AGI and ensure that new ideas are widely distributed, establishing a more even playing field between small and large AI companies.
+### The ARC AGI evaluation (ARC-AGI) and the need for open-source AGI research to increase the rate of new ideas and decrease the chances of AGI being discovered by a single lab.
+The ARC AGI evaluation (ARC-AGI) is a crucial tool for measuring the progress of artificial general intelligence (AGI) and identifying the need for open-source AGI research. ARC-AGI is the only evaluation method that measures general intelligence, which is the ability to efficiently acquire new skills and solve novel, open-ended problems. The current state-of-the-art (SOTA) high score for ARC-AGI is only 34%, which highlights the significant gap between current AI systems and human intelligence. Given that humans can master tasks quickly, ARC-AGI is easy for humans and impossible for modern AI systems.
+The need for open-source AGI research is crucial to increase the rate of new ideas and decrease the chances of AGI being discovered by a single lab. The current trend in AI research is moving towards closed-source research, which limits the sharing of ideas and knowledge. This trend is driven by the belief that "scale is all you need" and the desire to protect competitive advantages. However, this approach stifles innovation and limits the rate of progress towards AGI.
+Open-source research, on the other hand, promotes collaboration and knowledge sharing, which accelerates the rate of progress towards AGI. By making research openly accessible, researchers from around the world can contribute to the development of new ideas and innovations. This approach also ensures that new ideas are widely distributed, establishing a more even playing field between small and large AI companies.
+Moreover, the lack of transparency and collaboration in AI research is contributing to the misperception that AGI is imminent, which is influencing the AI regulatory environment. Regulators are considering roadblocks to frontier AI research under the wrong assumption that AGI is imminent. However, the truth is that no one knows how to build AGI. By promoting open-source research, we can accelerate the rate of progress towards AGI and ensure that new ideas are widely distributed, establishing a more even playing field between small and large AI companies.
+In conclusion, the ARC AGI evaluation (ARC-AGI) is a crucial tool for measuring the progress of AGI and identifying the need for open-source AGI research. Open-source research promotes collaboration and knowledge sharing, which accelerates the rate of progress towards AGI and ensures that new ideas are widely distributed. By incentivizing open-source research, we can increase the rate of new ideas and decrease the chances of AGI being discovered by a single lab, ultimately leading to a more even playing field between small and large AI companies.
+The paper "On the Measure of Intelligence" by Francois Chollet discusses the problem of measuring intelligence in machines and proposes a new evaluation called the ARC evaluation (ARC-E). The author argues that current evaluation methods, which focus on narrow tasks and do not account for general intelligence, are inadequate for measuring the true intelligence of machines.
+Chollet defines general intelligence as the ability to acquire new skills through learning and experience, and to apply those skills in new and unfamiliar situations. He notes that current AI systems, including large language models (LLMs), are good at memorizing information and performing well on specific tasks, but they lack the ability to generalize and apply their knowledge to new situations.
+To address this problem, Chollet proposes the ARC-E, which is designed to measure a system's ability to learn and generalize across a wide range of tasks. The evaluation consists of a series of questions that require a system to reason and think creatively, rather than simply recall information. The questions are designed to be challenging and require the system to use a variety of cognitive skills, such as pattern recognition, analogy-making, and causal reasoning.
+Chollet argues that the ARC-E provides a more accurate measure of a system's general intelligence than current evaluation methods, and that it can help guide the development of more intelligent AI systems. He suggests that the ARC-E could be used to evaluate the intelligence of both narrow AI systems and more general AI systems, and that it could help researchers identify areas where current AI systems are lacking in intelligence.
+Overall, the paper "On the Measure of Intelligence" presents a new evaluation method for measuring the intelligence of AI systems, and argues that this method is more effective than current evaluation methods for measuring general intelligence. The proposed evaluation, the ARC-E, is designed to challenge AI systems to think creatively and apply their knowledge in new situations, providing a more accurate measure of their true intelligence.
+The ARC challenge, also known as the Abstraction and Reasoning Corpus (ARC-AGI), is a benchmark introduced by François Chollet in his influential paper "On the Measure of Intelligence" in 2019. The purpose of the ARC challenge is to measure the efficiency of AI skill-acquisition on unknown tasks, specifically focusing on general intelligence.
+The ARC challenge consists of unique training and evaluation tasks, each containing input-output examples presented in the form of grids with squares of ten different colors. The goal is to produce a pixel-perfect correct output grid for the final output, including picking the correct dimensions of the output grid. The challenge is explicitly designed to compare artificial intelligence with human intelligence by listing the priors knowledge that humans possess, such as objectness, goal-directedness, numbers and counting, and basic geometry and topology.
+The ARC challenge is considered the only AI benchmark that measures progress towards general intelligence, and solving it would represent a significant stepping stone towards AGI. It would result in a new programming paradigm that would allow anyone, even those without programming knowledge, to create programs simply by providing a few input-output examples of what they want. This would dramatically expand who is able to leverage software and automation, and programs could automatically refine themselves when exposed to new data, similar to how humans learn.
+The ARC challenge has a history of competitions, starting with the first ARC-AGI competition on Kaggle in 2020, followed by the ARCathon 2022 and ARCathon 2023, with the most recent being the ARC Prize 2024 with a prize pool of over $1.1M.
+/////
