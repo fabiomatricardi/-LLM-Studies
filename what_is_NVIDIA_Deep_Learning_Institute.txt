@@ -1,0 +1,107 @@
+=======================================
+AI is quickly becoming an integral part of diverse industries, from transportation and healthcare to manufacturing and finance. AI powers chatbots, recommender systems, computer vision applications, fraud prevention, and autonomous vehicles. It also has broad applications in engineering and science.
+Physics-informed machine learning (physics-ML) leverages knowledge of the physical world to train AI models. It is well suited for modeling real-world systems — some applications include: predicting extreme weather, data center cooling, turbulent flow over a car, and protein modeling.
+Figure 1. Physics-ML is used to model physical systems such as weather, ocean currents, and tidal activity
+Academic institutions play a pivotal role in nurturing emerging technologies and driving the innovation needed for their widespread adoption. There is no denying that today’s students who want to succeed in tomorrow’s workplace need to understand how AI can enable solutions.
+To support this work, NVIDIA is collaborating with pioneers at the intersection of science, engineering, and AI to create the first Deep Learning for Science and Engineering Teaching Kit for educators in academia worldwide.
+This new teaching kit will enable the next generation of engineers and scientists to leverage AI for innovation in the field of engineering and science. It was created with leading academics including George Karniadakis, professor of Applied Mathematics and Engineering at Brown University, and his team.
+“We designed this course with my collaborator, Dr. Raj Shukla, to address the urgent need for specific material for scientists and engineers,” said Karniadakis. “We focused on regression and mimicking the approximation theory and algorithms required in classical numerical analysis courses in the engineering curriculum.”
+Educators can get full, free access to the Deep Learning for Science and Engineering Teaching Kit (and many more) by joining the NVIDIA DLI Teaching Kit Program. Kits include lecture materials, labs, and sample problem sets to facilitate incorporating advanced technology into course curriculums. The entire lecture portion of the course is also available on NVIDIA On-Demand.
+Overview of the Science and Engineering Teaching Kit
+Educators in various fields will find this teaching kit useful, from mechanical, structural, and electrical engineering to atmospheric science, computational science, and more. Materials in the kit include the fundamentals of deep learning as well as advanced topics and hands-on exercises. It contains 15 lectures totaling about 30-35 hours, homework, and 20 projects across different fields.
+The Deep Learning for Science and Engineering Teaching Kit contains focused modules that combine theory, algorithms, programming, and examples. Highlights include:
+A primer on Python plus scientific and deep learning libraries
+Deep neural network architectures, training, and optimization
+Physics-informed neural networks
+Neural operators
+Data and uncertainty quantification
+High-performance computing (HPC) and the NVIDIA Modulus open-source framework
+This content is ideal for educators in engineering and science. The modular design enables instructors to develop their own custom version of the course to suit the needs of their students.
+The teaching kit includes dedicated modules for physics-ML, due to its potential to transform HPC simulation workflows across disciplines. These include multi-disciplinary physics including computational fluid dynamics, structural mechanics, and computational chemistry. Because of its broad applicability across science and engineering domains, physics-ML is well suited for modeling real-world multiphysics systems.
+AI surrogate models can help develop a wide range of solutions including weather forecasting, reducing power plant greenhouse gasses, and accelerating clean energy transitions. Such physically consistent surrogate models can underpin the deployment of large-scale digital twins of real-world systems.
+“To this end,” Karniadakis said, “the focus of the course is how to solve forward and inverse problems given sparse and noisy data, how to discover governing physical laws, how to construct proper surrogate models for digital twins, and how to quantify uncertainties associated with models and data.”
+The kit leverages the open-source NVIDIA Modulus framework with hands-on tutorials for project-based learning. Modulus enables engineering and scientific communities that may not have AI or programming expertise. With a Python-based interface, Modulus provides the right tools to combine the governing partial differential equations and other attributes of the problem like the physical geometry and boundary conditions with the training dataset in a simple way.
+It also provides a variety of reference applications as starting points, across domains (computational fluid dynamics, structures, thermal) applied to problems in different segments from manufacturing to healthcare. To learn more, see Physics-Informed Machine Learning Platform NVIDIA Modulus Is Now Open Source.
+Given the rapid pace of change in the field of AI, educators can anticipate that the teaching material will be updated, as needed. NVIDIA is committed to providing the best educational materials, and feedback is welcome.
+“The NVIDIA Teaching Kit on physics-ML has provided me with great resources for use in my machine learning course targeted for our engineering students,” said Hadi Meidani, associate professor of Civil & Environmental Engineering at University of Illinois Urbana-Champaign. “The examples and code greatly enable hands-on learning experiences on how machine learning is applied to scientific and engineering problems.”
+Get started
+Educators can get full, free access to the Deep Learning for Science and Engineering Teaching Kit (and many more) by joining the NVIDIA DLI Teaching Kit Program. The entire lecture part of the course is also openly available through NVIDIA On-Demand.
+For access to tutorial content, reach out to the Modulus team. To get started with NVIDIA Modulus hands-on experience, see Introduction to Physics-Informed Machine Learning with Modulus.
+---------------------
+'source': https://developer.nvidia.com/blog/nvidia-deep-learning-institute-launches-science-and-engineering-teaching-kit/,
+'title': NVIDIA Deep Learning Institute Launches Science and Engineering ...,
+'snippet': The Deep Learning for Science and Engineering Teaching Kit contains focused modules that combine theory, algorithms, programming, and examples. Highlights include: A primer on Python plus scientific and deep learning libraries. Deep neural network architectures, training, and optimization. Physics-informed neural networks.,
+'author':['Ram Cherukuri', 'Mohammad Nabian', 'View All Posts Ram Cherukuri', 'View All Posts Mohammad Nabian'],
+'keywords':['kit', 'learning', 'science', 'nvidia', 'course', 'engineering', 'ai', 'institute', 'teaching', 'launches', 'modulus', 'deep'],
+'meta_description':AI is quickly becoming an integral part of diverse industries, from transportation and healthcare to manufacturing and finance. AI powers chatbots…,
+'meta_img':https://developer-blogs.nvidia.com/wp-content/uploads/2023/10/nvidia-deep-learning-institute-teaching-kit-logo.jpg,
+'top_image':https://developer-blogs.nvidia.com/wp-content/uploads/2023/10/nvidia-deep-learning-institute-teaching-kit-logo.jpg,
+'publish_date':2023-11-13 17:30:00+00:00,
+'summary':To support this work, NVIDIA is collaborating with pioneers at the intersection of science, engineering, and AI to create the first Deep Learning for Science and Engineering Teaching Kit for educators in academia worldwide.
+“We focused on regression and mimicking the approximation theory and algorithms required in classical numerical analysis courses in the engineering curriculum.”Educators can get full, free access to the Deep Learning for Science and Engineering Teaching Kit (and many more) by joining the NVIDIA DLI Teaching Kit Program.
+Overview of the Science and Engineering Teaching KitEducators in various fields will find this teaching kit useful, from mechanical, structural, and electrical engineering to atmospheric science, computational science, and more.
+The Deep Learning for Science and Engineering Teaching Kit contains focused modules that combine theory, algorithms, programming, and examples.
+“The examples and code greatly enable hands-on learning experiences on how machine learning is applied to scientific and engineering problems.”Get startedEducators can get full, free access to the Deep Learning for Science and Engineering Teaching Kit (and many more) by joining the NVIDIA DLI Teaching Kit Program.
+---------------------------------------------------
+=======================================
+NVIDIA is offering new certifications in generative AI to enable developers to establish technical credibility in this important domain.
+Generative AI is revolutionizing industries worldwide, yet there’s a critical skills gap and need to uplevel employees to harness the technology more fully.
+Available for the first time from NVIDIA, this new certification enables developers, career professionals, and others to validate and showcase their generative AI skills and expertise. Our new certification program introduces two associate-level generative AI certifications, focusing on proficiency in large language models and multimodal workflow skills.
+“Generative AI has moved to center stage as governments, industries and organizations everywhere look to harness its transformative capabilities,” NVIDIA founder and CEO Jensen Huang recently said.
+The certification will become available starting at GTC, where in-person attendees can also access recommended training to prepare for a certification exam.
+“Organizations in every industry need to increase their expertise in this transformative technology,” said Greg Estes, vice president of developer programs at NVIDIA. “Our goals are to assist in upskilling workforces, sharpen the skills of qualified professionals, and enable individuals to demonstrate their proficiency in order to gain a competitive advantage in the job market.”
+The first two gen AI certifications are entry-level credentials designed to validate foundational skills for developing, integrating and maintaining applications using generative AI, large language models and multimodal models with NVIDIA solutions.
+See AI’s Future. Learn How to Use It.
+GTC 2024 — running March 18-21 in San Jose, Calif. — is the first in-person GTC event in five years, and more than 300,000 people are expected to register to attend in person or virtually. There will be 900 sessions and more than 300 exhibitors showcasing how organizations are deploying NVIDIA platforms to achieve industry breakthroughs.
+Attendees can choose from 20 full-day, hands-on technical workshops, with many sessions available virtually in EMEA and APAC time zones. Also, sign up for the GTC Conference + Training package for more than 40 complimentary onsite training labs.
+Learn more about the generative AI certification.
+---------------------
+'source': https://blogs.nvidia.com/blog/generative-ai-certification/,
+'title': NVIDIA Introduces Generative AI Certification | NVIDIA Blog,
+'snippet': NVIDIA is offering new certifications in generative AI to enable developers to establish technical credibility in this important domain. Generative AI is revolutionizing industries worldwide, yet there's a critical skills gap and need to uplevel employees to harness the technology more fully. Available for the first time from NVIDIA, this new ...,
+'author':['Craig Clawson', '.Wp-Block-Co-Authors-Plus-Coauthors.Is-Layout-Flow', 'Class', 'Wp-Block-Co-Authors-Plus', 'Display Inline', '.Wp-Block-Co-Authors-Plus-Avatar', 'Where Img', 'Height Auto Max-Width', 'Vertical-Align Bottom .Wp-Block-Co-Authors-Plus-Coauthors.Is-Layout-Flow .Wp-Block-Co-Authors-Plus-Avatar', 'Vertical-Align Middle .Wp-Block-Co-Authors-Plus-Avatar Is .Alignleft .Alignright'],
+'keywords':['certification', 'models', 'certifications', 'gtc', 'introduces', 'training', 'nvidia', 'generative', 'ai', 'skills', 'class', 'virtually'],
+'meta_description':NVIDIA is offering new certifications in generative AI to enable developers to establish technical credibility in this important domain.,
+'meta_img':https://blogs.nvidia.com/wp-content/uploads/2024/03/nvt-general-AI-certification-no-copy-social-1200x675-1.jpg,
+'top_image':https://blogs.nvidia.com/wp-content/uploads/2024/03/nvt-general-AI-certification-no-copy-social-1200x675-1.jpg,
+'publish_date':2024-03-07 17:02:33+00:00,
+'summary':NVIDIA is offering new certifications in generative AI to enable developers to establish technical credibility in this important domain.
+Generative AI is revolutionizing industries worldwide, yet there’s a critical skills gap and need to uplevel employees to harness the technology more fully.
+Available for the first time from NVIDIA, this new certification enables developers, career professionals, and others to validate and showcase their generative AI skills and expertise.
+Our new certification program introduces two associate-level generative AI certifications, focusing on proficiency in large language models and multimodal workflow skills.
+Learn more about the generative AI certification.
+---------------------------------------------------
+=======================================
+NVIDIA websites use cookies to deliver and improve the website experience. See our cookie policy for further details on how we use cookies and how to change your cookie settings.
+---------------------
+'source': https://resources.nvidia.com/en-us-modulus-pathfactory/science-engineering-kit,
+'title': NVIDIA Deep Learning Institute Launches Science and Engineering ...,
+'snippet': NVIDIA is collaborating with academic experts to create a Deep Learning for Science and Engineering Teaching Kit, aiming to equip educators with materials for incorporating AI into engineering and science curricula. The kit covers fundamental and advanced topics, including physics-informed machine learning, leveraging the open-source NVIDIA Modulus framework, and is designed for various ...,
+'author':[],
+'keywords':['experience', 'kit', 'learning', 'science', 'websites', 'settings', 'improve', 'policy', 'details', 'nvidia', 'website', 'engineering', 'institute', 'teaching', 'launches', 'deep', 'cookie', 'cookies'],
+'meta_description':NVIDIA is collaborating with academic experts to create a Deep Learning for Science and Engineering Teaching Kit, aiming to equip educators with materials for incorporating AI into engineering and science curricula. The kit covers fundamental and advanced topics, including physics-informed machine,
+'meta_img':https://cdn.pathfactory.com/assets/10412/contents/558456/thumbnails/600x/nvidia-deep-learning-institute-teaching-kit-logo.jpg,
+'top_image':https://cdn.pathfactory.com/assets/10412/contents/558456/thumbnails/600x/nvidia-deep-learning-institute-teaching-kit-logo.jpg,
+'publish_date':None,
+'summary':NVIDIA websites use cookies to deliver and improve the website experience.
+See our cookie policy for further details on how we use cookies and how to change your cookie settings.
+---------------------------------------------------
+=======================================
+At NVIDIA, you’ll solve some of the world’s hardest problems and discover never-before-seen ways to improve the quality of life for people everywhere. From healthcare to robots, self-driving cars to blockbuster movies, the list of new opportunities is growing every single day. Explore all of our open roles, including internships and new college graduate positions.
+
+Come meet the NVIDIA team at the SC23 job fair at table JF15.
+---------------------
+'source': https://www.nvidia.com/en-us/events/supercomputing/,
+'title': NVIDIA at Supercomputing 2023(SC23) | NVIDIA,
+'snippet': Get Hands-On Training With the NVIDIA Deep Learning Institute Develop the skills you need to do your life's work in accelerated computing, data science, and AI and earn certificates of subject-matter competency through the NVIDIA Deep Learning Institute (DLI) .,
+'author':[],
+'keywords':['supercomputing', 'table', 'selfdriving', 'solve', 'youll', 'sc23', 'ways', 'team', 'worlds', 'nvidia', 'single', '2023', 'NVIDIA at  Supercomputing 2023', 'NVIDIA', 'SC23', 'November 12–17', '2023', 'virtual theater'],
+'meta_description':Join us online at Supercomputing 2023 (SC23) to see how GPU computing and high-performance networking are transforming computational science and AI.,
+'meta_img':https://www.nvidia.com/content/dam/en-zz/Solutions/events/supercomputing/2023/nv-sc23-og.jpg,
+'top_image':https://www.nvidia.com/content/dam/en-zz/Solutions/events/supercomputing/2023/nv-sc23-og.jpg,
+'publish_date':None,
+'summary':At NVIDIA, you’ll solve some of the world’s hardest problems and discover never-before-seen ways to improve the quality of life for people everywhere.
+From healthcare to robots, self-driving cars to blockbuster movies, the list of new opportunities is growing every single day.
+Explore all of our open roles, including internships and new college graduate positions.
+Come meet the NVIDIA team at the SC23 job fair at table JF15.
+---------------------------------------------------
